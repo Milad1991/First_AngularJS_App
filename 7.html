@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="">
+<head>
+	<meta charset='UTF-8'>
+	<title> First Angular App | ng-repeat </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+</head>
+<body>
+
+<!-- when the data is getting looped -->
+
+	<div ng-init="myFavLan=[{name:'PHP',extension:'.php'},{name:'Javascript',extension:'.js'},{name:'Ruby',extension:'.rb'},{name:'C++',extension:'.cpp'}]">
+		
+	<p ng-repeat="language in myFavLan"> 
+		Name: {{ language.name }}<br>	
+		Extension: {{ language.extension }}<br>
+	</p>
+
+	</div>
+
+
+
+
+
+	
+
+</body>
+</html>
